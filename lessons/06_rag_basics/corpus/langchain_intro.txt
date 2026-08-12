@@ -1,0 +1,9 @@
+LangChain 是一套用于构建大模型应用的框架。它把模型、提示词、工具、检索器等组件收成统一接口，方便组合。
+
+LCEL（LangChain Expression Language）用竖线把可运行组件连成链，例如 prompt | model | parser。线性流程适合用 LCEL；需要循环、分支、持久化时，更适合 LangGraph。
+
+LangGraph 是面向 Agent 编排的底层运行时。它用有向图描述节点和边，节点读写共享 State。LangChain 的 create_agent 底层就建立在 LangGraph 之上。
+
+OpenRouter 提供统一的大模型 HTTP 接口。本课程通过 OpenAI 兼容协议调用 OpenRouter，换模型只需修改 OPENROUTER_MODEL。
+
+检索增强生成（RAG）的典型步骤：加载文档、切分、向量化、检索相关片段、把片段和问题一起交给模型生成答案。
