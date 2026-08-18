@@ -7,3 +7,7 @@ LangGraph 是面向 Agent 编排的底层运行时。它用有向图描述节点
 OpenRouter 提供统一的大模型 HTTP 接口。本课程通过 OpenAI 兼容协议调用 OpenRouter，换模型只需修改 OPENROUTER_MODEL。
 
 检索增强生成（RAG）的典型步骤：加载文档、切分、向量化、检索相关片段、把片段和问题一起交给模型生成答案。
+
+小红是周瑜的妹妹
+
+小乔的哥哥是周瑜的舅舅

@@ -23,7 +23,7 @@ docs = splitter.create_documents([raw])
 store = InMemoryVectorStore.from_documents(docs, get_embeddings())
 retriever = store.as_retriever(search_kwargs={"k": 2})
 
-question = "LangChain 的 create_agent 和 LangGraph 是什么关系？"
+question = "周瑜和小乔是什么关系？"
 hits: list[Document] = retriever.invoke(question)
 
 print_divider("检索到的片段")
